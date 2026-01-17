@@ -14,29 +14,19 @@
 
 ### 1. Data Pipeline (Scraping)
 * **Tools Used:** (pinecone,sentence-transformers,streamlit,beautifulsoup4,requests,openai,dotenv)
-* **Strategy:** 
+* **Strategy: using sentence-transformers we are finding the top chunks and feeding that to llm and then MoE Verifying its authenticity..
 * **Indexing:** (Pinecone)
 
 ### 2. Graph of Thoughts (GoT)
-* **Reasoning Model:** Explain how your nodes and edges are structured.
-* **Graph Logic:** How do you connect different MetaKGP pages? (e.g., connecting a "Society" page to a "Student" page).
+ we Have Implemented Only for society Pages , as there as 3500 Pages in Total , So each NOde just denote diffirent Society Pages 
 
 ### 3. Mixture of Experts (MoE)
 * **Expert 1 (Source Matcher):** How do you verify the text exists in the scraped data?
 * **Expert 2 (Hallucination Hunter):** How do you detect fabricated info?
 * **Expert 3 (Logic Expert):** How do you ensure logical consistency?
 
-## 📊 Setup Instructions
-* **Prerequisites:** (e.g., Python 3.10, Neo4j)
-* **Environment Variables:** List required `.env` keys (do not share actual keys).
-* **How to Run Scraper:** `python scrape.py`
-* **How to Run Bot:** `streamlit run app.py`
 
-## 📸 Screenshots
-* 
 
-[Image of Graph Visualization]
 
-* 
+https://github.com/user-attachments/assets/7594aae4-4653-4351-a3e5-f29c527f4e0e
 
-[Image of Chat Interface]
